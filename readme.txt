@@ -47,6 +47,7 @@ Particularly useful with a BBPress installation or just to engage users to inter
 
 = 2.2 20231020 =
 * Compatibility check
+* Minor bugfix (thanks to R. Mészáros)
 * Minor changes
 
 = 2.1 20220901 =

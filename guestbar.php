@@ -3,7 +3,7 @@
 Plugin Name: WP Guest Bar
 Plugin URI:   https://wordpress.org/plugins/wp-guest-bar
 Description: Adds a BuddyPress guest bar (login+register) to your WordPress site and show a message!
-Version: 2.1
+Version: 2.2
 Author: Marco Milesi
 Author URI:   https://wordpress.org/plugins/wp-guest-bar
 Contributors: Milmor
@@ -57,7 +57,12 @@ class WpGuestBar {
         $options = get_option('wpgov_wpgb');
         
         if ( isset( $options['message'] ) && $options['message'] ) {
-            $wp_admin_bar->add_menu( array( 'title' => ( $options['message'] ) ) );
+            $wp_admin_bar->add_menu(
+                array(
+                'id'     => 'wpgb-custom-message',
+                'title' => ( $options['message'] )
+                )
+            );
         }
 	}
 
@@ -99,7 +104,7 @@ class WpGuestBar {
                         ?>
                         <table class="form-table">
                             <tr valign="top"><th scope="row"><label for="networkshareurl">Top Bar Message</label></th>
-                                <td><input id="networkshareurl" type="text" name="wpgov_wpgb[message]" value='<?php echo esc_attr( $options['message'] ); ?>' size="80"/><br><small>You can use html. Example:<code>&lt;span style="background-color:red;color:white;padding: 5px;"&gt;Hi User :)&lt;/span&gt;</code></small></td>
+                                <td><input id="networkshareurl" type="text" name="wpgov_wpgb[message]" value='<?php echo esc_attr( isset($options['message']) ? $options['message'] : '' ); ?>' size="80"/><br><small>You can use html. Example:<code>&lt;span style="background-color:red;color:white;padding: 5px;"&gt;Hi User :)&lt;/span&gt;</code></small></td>
                             </tr>
                             
                         </table>
