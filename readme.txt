@@ -1,11 +1,11 @@
 ﻿=== WP Guest Bar ===
 Contributors: Milmor
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F2JK36SCXKTE2
-Tags: toolbar, guest, anonymous, admin, bar, wordpress, login, register, buddypress, bbress, community
+Tags: toolbar, guest, anonymous, admin, bar, login, register, buddypress
 Requires at least: 3.3
-Tested up to: 6.3
-Version: 2.2
-Stable tag: 2.2
+Tested up to: 6.6
+Version: 2.3
+Stable tag: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,10 @@ Particularly useful with a BBPress installation or just to engage users to inter
 2. Responsive mobile UI
 
 == Changelog ==
+
+= 2.2 2024-05-24 =
+* Compatibility check
+* Minor changes
 
 = 2.2 20231020 =
 * Compatibility check
