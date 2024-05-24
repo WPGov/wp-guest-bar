@@ -3,7 +3,7 @@
 Plugin Name: WP Guest Bar
 Plugin URI:   https://wordpress.org/plugins/wp-guest-bar
 Description: Adds a BuddyPress guest bar (login+register) to your WordPress site and show a message!
-Version: 2.2
+Version: 2.3
 Author: Marco Milesi
 Author URI:   https://wordpress.org/plugins/wp-guest-bar
 Contributors: Milmor
